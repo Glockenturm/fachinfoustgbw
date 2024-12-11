@@ -1,0 +1,756 @@
+@base
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<scheme> a skos:ConceptScheme ;
+    dct:title "Diese Klassifikation basiert auf der Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw), 3. Auflage 2020."@de, "This classification is based on the Specialist Information Support of the German Armed Forces (Classification FachInfoUstgBw), 3rd Edition 2020."@en
+    dct:description
+    dct:issued
+    skos:hasTopConcept
+
+"MIA" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Organisation, Strategie, Taktik, Geschichte und den allgemeinen Aspekten von militärischen Angelegenheiten"@de,
+        "Organization, strategy, tactics, history, and general aspects of military affairs"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Militärwesen allgemein"@de,
+        "Military Affairs in General"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Militärwesen" ;
+    skos:notation "MIA" ;
+    skos:prefLabel "Militärwesen allgemein"@de,
+        "Military Affairs in General"@en ;
+    skos:topConceptOf "Militärwesen allgemein" .
+
+"MIA000" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Allgemeine Themen des Militärwesens"@de,
+        "General topics of military science"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Militärwesen"@de,
+        "Military Affairs"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Allgemeine militärische Fachenzyklopädien",
+        "Lexika und Fachwörter" ;
+    skos:notation "MIA000" ;
+    skos:prefLabel "Militärwesen"@de,
+        "Military Affairs"@en ;
+    skos:scopeNote "Hinw.: Allgemeines"@de,
+        "Note: General"@en ;
+    skos:topConceptOf "Militärwesen" .
+
+"MIA001" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Fachenzyklopädien, Lexika und Fachwörterbücher, die allgemeine Themen des Militärwesens beinhalten"@de,
+        "Encyclopedias, lexicons, and specialized dictionaries covering general military topics"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine militärische Fachenzyklopädien, Lexika und Fachwörterbücher"@de,
+        "General military encyclopedias, lexicons, and specialized dictionaries"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA001" ;
+    skos:prefLabel "Allgemeine militärische Fachenzyklopädien, Lexika und Fachwörterbücher"@de,
+        "General Military Encyclopedias, Lexicons, and Specialized Dictionaries"@en ;
+    skos:scopeNote "ausg: MIH001 Fachenzyklopädien, Lexika und Fachwörterbücher der Landstreitkräfte und Landkriegführung; MIL001 Fachenzyklopädien, Lexika und Fachwörterbücher der Luftstreitkräfte und Luftkriegführung; MIM001 Fachenzyklopädien, Lexika und Fachwörterbücher der Marine und Seekriegführung"@de,
+        "Ex: MIH001 Encyclopedias, Lexicons, and Specialized Dictionaries of Land Forces and Land Warfare; MIL001 Encyclopedias, Lexicons, and Specialized Dictionaries of Air Forces and Air Warfare; MIM001 Encyclopedias, Lexicons, and Specialized Dictionaries of Naval Forces and Naval Warfare."@en ;
+    skos:topConceptOf "Militärwesen" .
+
+"MIA002" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Fachbibliographien, die allgemeine Themen des Militärwesens beinhalten"@de,
+        "Bibliographies covering general military topics"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine militärische Fachbibliographien"@de,
+        "General military bibliographies"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA002" ;
+    skos:prefLabel "Allgemeine militärische Fachbibliographien"@de,
+        "General Military Bibliographies"@en ;
+    skos:scopeNote "ausg: MIH002 Fachbibliographien der Landstreitkräfte und Landkriegführung; MIL002 Fachbibliographien der Luftstreitkräfte und Luftkriegführung; MIM002 Fachbibliographien der Marine und Seekriegführung"@de,
+        "Ex: MIH002 Specialized Bibliographies of Land Forces and Land Warfare; MIL002 Specialized Bibliographies of Air Forces and Air Warfare; MIM002 Specialized Bibliographies of Naval Forces and Naval Warfare."@en ;
+    skos:topConceptOf "Militärwesen" .
+
+"MIA008" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Bedeutende Einzelpersonen, die eine wichtige Rolle in der Geschichte und Entwicklung der militärischen Institutionen eines Landes gespielt haben ohne Spezialisierung auf Land, Luft oder See"@de,
+        "Significant individuals who played an important role in the history and development of a country's military institutions, without specializing in land, air, or sea"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Persönlichkeiten der Streitkräfte"@de,
+        "Personalities of the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA008" ;
+    skos:prefLabel "Persönlichkeiten der Streitkräfte"@de,
+        "Personalities of the Armed Forces"@en ;
+    skos:scopeNote "Hinw.: Biographien; ausg: MIH008 Persönlichkeiten der Landstreitkräfte; MIL008 Persönlichkeiten der Luftstreitkräfte; MIM008 Persönlichkeiten der Seestreitkräfte"@de,
+        "Note: Biographies; Ex: MIH008 Personalities of Land Forces; MIL008 Personalities of Air Forces; MIM008 Personalities of Naval Forces."@en ;
+    skos:topConceptOf "Militärwesen" .
+
+"MIA100" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Alle militärischen Strukturen und Einheiten eines Landes, von der nationalen Verteidigung bis hin zu nichtstaatlichen militärischen Gruppen."@de,
+        "All military structures and units of a country, from national defense to non-state military groups"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen"@de,
+        "Military systems, overall armed forces, strategic troop structures, paramilitary organizations"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Gesamtstreitkräfte",
+        "Geschichte der Wehrsysteme",
+        "strategischen Truppengliederungen und paramilitärischen Organisationen" ;
+    skos:notation "MIA100" ;
+    skos:prefLabel "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen"@de,
+        "Defense Systems"@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA103" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Die Entwicklung und Veränderung militärischer Strukturen und deren Rolle in der nationalen und internationalen Sicherheit."@de,
+        "The development and change of military structures and their role in national and international security"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Geschichte der Wehrsysteme, Gesamtstreitkräfte, strategischen Truppengliederungen und paramilitärischen Organisationen"@de,
+        "History of military systems, overall armed forces, strategic troop structures, and paramilitary organizations"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA103" ;
+    skos:prefLabel "Geschichte der Wehrsysteme, Gesamtstreitkräfte, strategischen Truppengliederungen und paramilitärischen Organisationen"@de,
+        "Unified Armed Forces"@en ;
+    skos:scopeNote "Hinw: IMMER auch eine entsprechende MIG... Notation vergeben"@de,
+        "Note: ALWAYS assign a corresponding MIG... notation."@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA108" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Mitglieder von Gruppen, die militärische Fähigkeiten besitzen, aber nicht Teil des regulären Militärs sind."@de,
+        "Members of groups with military capabilities, but not part of the regular military"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Personen paramilitärischer und vormilitärischer Organisationen"@de,
+        "Individuals in paramilitary and pre-military organizations"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA108" ;
+    skos:prefLabel "Personen paramilitärischer und vormilitärischer Organisationen"@de,
+        "Strategic Force Structures"@en ;
+    skos:scopeNote "Hinw: Auch Personen von SA und SS (Biographien)"@de,
+        "Note: Also includes individuals from SA and SS (Biographies)."@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA110" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Alle militärischen und sicherheitsrelevanten Strukturen eines Landes, die der Verteidigung dienen."@de,
+        "All military and security-related structures of a country serving defense purposes"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Wehrsysteme"@de,
+        "Military systems"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA110" ;
+    skos:prefLabel "Wehrsysteme"@de,
+        "Paramilitary Organizations"@en ;
+    skos:scopeNote "Hinw: zB Wehrpflichtarmee, Berufsarmee, Milizsystem"@de,
+        "Note: Examples include conscription armies, professional armies, and militia systems."@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA120" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Gesamtheit der militärischen Einheiten eines Landes, einschließlich aller Teilstreitkräfte"@de,
+        "The entirety of a country's military units, including all branches of the armed forces"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Gesamtstreitkräfte"@de,
+        "Overall armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA120" ;
+    skos:prefLabel "Gesamtstreitkräfte"@de,
+        "History of Defense Systems, Unified Armed Forces, Strategic Force Structures, and Paramilitary Organizations"@en ;
+    skos:scopeNote "Hinw: Gesamtdarstellungen der Streitkräfte, einschließlich ihrer Wehrstruktur, Gliederung und Organisation."@de,
+        "Note: Comprehensive overviews of armed forces, including their defense structure, composition, and organization."@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA130" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Koordinieren und leiten militärische Operationen über verschiedene Teilstreitkräfte und Länder hinweg."@de,
+        "Coordinating and leading military operations across various branches of the armed forces and countries"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Strategische und teilstreitkraftübergreifende operative Truppengliederungen und Kommandobereiche"@de,
+        "Strategic and inter-branch operational troop structures and command areas"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Teilstreitkraftübergreifende multinationale Streitkräfte" ;
+    skos:notation "MIA130" ;
+    skos:prefLabel "Strategische und teilstreitkraftübergreifende operative Truppengliederungen und Kommandobereiche"@de,
+        "Individuals in Paramilitary and Premilitary Organizations"@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA135" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Bestehen aus militärischen Einheiten verschiedener Länder, die gemeinsam unter einer einzigen Führung operieren."@de,
+        "Consisting of military units from different countries operating together under a single command"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Teilstreitkraftübergreifende multinationale Streitkräfte"@de,
+        "Inter-branch multinational armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA135" ;
+    skos:prefLabel "Teilstreitkraftübergreifende multinationale Streitkräfte"@de,
+        "Strategic and Cross-Service Operational Force Structures and Command Areas"@en ;
+    skos:scopeNote "ausg: MIP200 Internationale oder supranationale Friedenstruppe und Beobachter; MIH113 Nationale und multinationale Großverbände der Landstreitkräfte; MIM113 Nationale und multinationale Flotten und Großverbände der Seestreitkräfte, Marine-Einsatzgruppen; MIL113 Nationale und multinationale Großverbände der Luftstreitkräfte"@de,
+        "Ex: MIP200 International or Supranational Peacekeeping Forces and Observers; MIH113 National and Multinational Large Formations of Land Forces; MIM113 National and Multinational Fleets and Large Formations of Naval Forces, Naval Task Forces; MIL113 National and Multinational Large Formations of Air Forces."@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA140" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Bewaffnete Gruppen, die nicht Teil des regulären Militärs sind, aber ähnliche Strukturen und Taktiken verwenden"@de,
+        "Armed groups that are not part of the regular military but use similar structures and tactics"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Paramilitärische Organisationen"@de,
+        "Paramilitary organizations"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Grenzpolizei",
+        "Grenztruppen" ;
+    skos:notation "MIA140" ;
+    skos:prefLabel "Paramilitärische Organisationen"@de,
+        "Cross-Service Multinational Armed Forces"@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA141" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Paramilitärische oder militärische Einheiten, die primär für die Aufrechterhaltung der öffentlichen Ordnung und die Bekämpfung von inneren Unruhen innerhalb eines Staates zuständig sind"@de,
+        "Spezialisierte Sicherheitskräfte, die für die Überwachung, Kontrolle und Sicherung von nationalen Grenzen zuständig sind"@de,
+        "Paramilitary or military units primarily responsible for maintaining public order and combating internal unrest within a state"@en,
+        "Specialized security forces responsible for monitoring, controlling, and securing national borders"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Grenztruppen, Grenzpolizei"@de,
+        "Innere Truppen"@de,
+        "Border troops, border police"@en,
+        "Internal troops"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA141" ;
+    skos:prefLabel "Grenztruppen, Grenzpolizei"@de,
+        "Innere Truppen"@de,
+        "Border Troops, Border Police"@en,
+        "Internal Troops"@en ;
+    skos:scopeNote """ausg: MIM170 Küstenwache in Gesamtdarstellungen, Verbände der Küstenwache
+siehe: MIK540 Grenzsicherung"""@de,
+        "Ex: MIM170 Coast Guard in Comprehensive Representations, Coast Guard Units; See: MIK540 Border Security."@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA143" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Bewaffnete Gruppen, die unkonventionelle Kriegsführung einsetzen, um politische, soziale oder ideologische Ziele zu erreichen."@de,
+        "Armed groups using unconventional warfare to achieve political, social, or ideological goals"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Guerillaorganisationen, Paramilitärische Befreiungsbewegungen"@de,
+        "Guerrilla organizations, paramilitary liberation movements"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA143" ;
+    skos:prefLabel "Guerillaorganisationen, Paramilitärische Befreiungsbewegungen"@de,
+        "Guerrilla Organizations, Paramilitary Liberation Movements"@en ;
+    skos:scopeNote "siehe: MIH362 Guerillakriegführung,Guerillataktik; POL551 Innere Unruhen, Aufstand, Revolution, Staatsstreich; POL632 Separatistische Bewegungen"@de,
+        "See: MIH362 Guerrilla Warfare, Guerrilla Tactics; POL551 Internal Disturbances, Uprising, Revolution, Coup d'État; POL632 Separatist Movements."@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA144" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Gruppen, die militärische oder paramilitärische Aktivitäten durchführen, jedoch keine formellen staatlichen Akteure sind."@de,
+        "Groups conducting military or paramilitary activities, but not formal state actors"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Bewaffnete Verbände nichtstaatlicher Organisationen"@de,
+        "Armed groups of non-state organizations"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA144" ;
+    skos:prefLabel "Bewaffnete Verbände nichtstaatlicher Organisationen"@de,
+        "Armed Groups of Non-State Organizations"@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA145" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Organisationen oder Gemeinschaften, die im Mittelalter und der frühen Neuzeit entstanden sind."@de,
+        "Organizations or communities that emerged in the Middle Ages and early modern period"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Historische Ritterorden"@de,
+        "Historical knightly orders"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA145" ;
+    skos:prefLabel "Historische Ritterorden"@de,
+        "Historical Knightly Orders"@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA150" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Bieten militärische Ausbildung an, sind aber nicht Teil des regulären Militärs."@de,
+        "Offer military training but are not part of the regular military"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Vormilitärische Organisationen"@de,
+        "Pre-military organizations"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:notation "MIA150" ;
+    skos:prefLabel "Vormilitärische Organisationen"@de,
+        "Premilitary Organizations"@en ;
+    skos:scopeNote """Hinw: zB DOSAAF, GST, NSFK, NSKK ...
+siehe: MIS620 Militärische Sportarten, Wehrsportarten, vormilitärische Ausbildung"""@de,
+        "Note: Examples include DOSAAF, GST, NSFK, NSKK...; See: MIS620 Military Sports, Defense Sports, Premilitary Training."@en ;
+    skos:topConceptOf "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen" .
+
+"MIA200" a skos:Concept ;
+    dct:audience "Angehörige der  Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Personalwesen in den Streitkräften der Bundeswehr"@de,
+        "Human resources in the armed forces of the Bundeswehr"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Personalwesen in den Streitkräften allgemein"@de,
+        "Personnel management in the armed forces in general"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Gesamtstreitkräfte",
+        "Wehrsysteme",
+        "paramilitärische Organisationen",
+        "strategische Truppengliederungen" ;
+    skos:notation "MIA200" ;
+    skos:prefLabel "Personalwesen in den Streitkräften allgemein"@de,
+        "Human resources in the armed forces in general"@en ;
+    skos:scopeNote "Hinw: Bei teilstreitkraftspezifischen Dokumenten klassiere zusätzlich MIH114, MIL114, MIM114. Siehe: BWL500, VWW410, MIS220"@de,
+        "Note: For branch-specific documents, also classify MIH114, MIL114, MIM114. See: BWL500, VWW410, MIS220"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA201" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Fachenzyklopädien, Lexika und Fachwörterbücher des allgemein militärischen Personalwesens"@de,
+        "Specialist encyclopedias, encyclopedias and specialist dictionaries for general military personnel management"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Fachenzyklopädien, Lexika und Fachwörterbücher des allgemein militärischen Personalwesens"@de,
+        "Encyclopedias, lexicons, and specialized dictionaries of general military personnel management"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Nachschlagewerke zum Thema des allgemeinen Personalwesens" ;
+    skos:notation "MIA201" ;
+    skos:prefLabel "Fachenzyklopädien, Lexika und Fachwörterbücher des allgemein militärischen Personalwesens"@de,
+        "Specialist encyclopedias, encyclopedias and specialist dictionaries for general military personnel management"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA202" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Fachbibliographien des allgemeinen militärischen Personalwesens"@de,
+        "Specialist bibliographies of general military personnel management"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Fachbibliographien des allgemeinen militärischen Personalwesens"@de,
+        "Bibliographies of general military personnel management"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Fachenzyklopädien",
+        "Lexika und Fachwörterbücher des allgemein militärischen Personalwesens" ;
+    skos:notation "MIA202" ;
+    skos:prefLabel "Fachbibliographien des allgemeinen militärischen Personalwesens"@de,
+        "Specialist bibliographies of general military personnel management"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA203" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Geschichte des militärischen Personalwesens"@de,
+        "History of military personnel"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Geschichte des allgemeinen militärischen Personalwesens"@de,
+        "History of general military personnel management"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Fachbibliographien des allgemeinen militärischen Personalwesens" ;
+    skos:notation "MIA203" ;
+    skos:prefLabel "Geschichte des allgemeinen militärischen Personalwesens"@de,
+        "History of general military personnel management"@en ;
+    skos:scopeNote "Hinw: immer auch eine entsprechende MIG... Notation vergeben"@de,
+        "Note: always assign a corresponding MIG... notation"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA207" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Handelt von den Organisationen und Institutionen des allgemeinen militärischen Personalwesens"@de,
+        "Is about the organizations and institutions of general military personnel management"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Organisation und Institutionen des allgemeinen militärischen Peronalwesens"@de,
+        "Organization and institutions of general military personnel management"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Geschichte des allgemeinen militärischen Personalwesens" ;
+    skos:notation "MIA207" ;
+    skos:prefLabel "Organisation und Institutionen des allgemeinen militärischen Peronalwesens"@de,
+        "Organization and institutions of general military personnel"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA210" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Handelt von der Personalplanung zum Zwecke der Personaldeckung der Bundeswehr sowie der Perosnalstruktur der Streitkräfte"@de,
+        "Is about personnel planning for the purpose of staffing the Bundeswehr and the personnel structure of the armed forces"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Personalplanung, Personalbedarf, Personalstruktur der Streitkräfte"@de,
+        "Personnel planning, personnel needs, and personnel structure of the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalwesen in der Bundeswehr" ;
+    skos:notation "MIA210" ;
+    skos:prefLabel "Personalplanung, Personalbedarf, Personalstruktur der Streitkräfte"@de,
+        "Personnel planning, personnel requirements, personnel structure of the armed forces"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA211" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Bezeichnung für die Organisation und die damit verbundenen Maßnahmen zur Erfassung und Musterung der männlichen Bevölkerung für den Wehrdienst"@de,
+        "Name for the organization and the associated measures for registering and mustering the male population for military service"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Wehrersatzwesen"@de,
+        "Military replacement system"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalbedarf",
+        "Personalplanung",
+        "Personalstruktur der Streitkräfte" ;
+    skos:notation "MIA211" ;
+    skos:prefLabel "Wehrersatzwesen"@de,
+        "Military replacement system"@en ;
+    skos:scopeNote """Hinw: Maßnahmen zur Umsetzung des Wehrpflichtgesetzes, insbesondere zur Deckung des personellen Bedarfs der Streitkräfte an Grundwehrdienstleistenden und Wehrübenden
+siehe:MIA441 Administrative und organisatorische Aufgaben auf dem Personalsektor"""@de,
+        """Note: Measures to implement the Conscription Act, in particular to cover the armed forces' personnel needs for basic military service and military training
+see:MIA441 Administrative and organizational tasks in the human resources sector"""@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA212" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Handelt von der Rekrutierung von Mitgliedern der Bundeswehr"@de,
+        "Deals with the recruitment of members of the Bundeswehr"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Nachwuchswerbung und Nachwuchsgewinnung "@de,
+        "Recruitment and youth recruitment"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalbedarf",
+        "Personalplanung",
+        "Personalstruktur der Streitkräfte" ;
+    skos:notation "MIA212" ;
+    skos:prefLabel "Nachwuchswerbung und Nachwuchsgewinnung "@de,
+        "Recruitment and acquisition of young talent"@en ;
+    skos:scopeNote """siehe:MIS461 Öffentlichkeitsarbeit der Streitkräfte, Partnerschaftspflege zu Truppenteilen verbündeter Streitkräfte PSY250 Wirtschafts- und Werbepsychologie
+BWL511 Personalbeschaffung, Personalbeurteilung"""@de,
+        """see: MIS461 Public relations of the armed forces, maintaining partnerships with units of allied armed forces PSY250 Business and advertising psychology
+BWL511 Personnel recruitment, personnel assessment"""@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA213" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Handelt von weiblichen Soldatinnen"@de,
+        "Is about female soldiers"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Soldatinnen"@de,
+        "Female soldiers"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalbedarf",
+        "Personalplanung",
+        "Personalstruktur der Streitkräfte" ;
+    skos:notation "MIA213" ;
+    skos:prefLabel "Soldatinnen"@de,
+        "Female soldier"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA215" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Handelt von der Reservistenarbeit"@de,
+        "Is about reservist work"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Reservistenarbeit"@de,
+        "Reservists work"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalbedarf",
+        "Personalplanung",
+        "Personalstruktur der Streitkräfte" ;
+    skos:notation "MIA214" ;
+    skos:prefLabel "Reservistenarbeit"@de,
+        "reservist work"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA218" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Handelt vom Zivilen Personal "@de,
+        "civilian personnel in the military"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Zivilpersonal im Militärwesen"@de,
+        "Civilian personnel in the military"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalbedarf",
+        "Personalplanung",
+        "Personalstruktur der Streitkräfte" ;
+    skos:notation "MIA218" ;
+    skos:prefLabel "Zivilpersonal im Militärwesen"@de,
+        "civilian personnel in the military"@en ;
+    skos:scopeNote "siehe:VWW410 Personalführung in der öffentlichen Verwaltung"@de,
+        "see:VWW410 Personnel management in public administration"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA220" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Allgemeine Themen der Personalführung , Personalbearbeitung in den Streitkäften"@de,
+        """General topics of personnel management, personnel processing in the dispute areas
+"""@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalwesen in den Streitkräften allgemein" ;
+    skos:notation "MIA220" ;
+    skos:prefLabel "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:scopeNote "siehe:MIA441 Administrative und organisatorische Aufgaben auf dem Personalsektor MIP611 Betriebskosten"@de,
+        "see:MIA441 Administrative and organizational tasks in the personnel sector MIP611 Operating costs"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA221" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Handelt von militärischen Personalführungssystemen und militärischen Personalinformationssystemen"@de,
+        "Deals with military personnel management systems and military personnel information systems"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Allgemeine Themen der Personalführung",
+        "Personalbearbeitung in den Streitkäften" ;
+    skos:notation "MIA221" ;
+    skos:prefLabel "Militärische Personalführungssysteme und Personalinformationssysteme"@de,
+        "Military personnel management systems and personnel information systems"@en ;
+    skos:scopeNote "siehe:BWL516 Personalführungs- und Personalinformationssysteme in der gewerblichen Wirtschaft MIT334 Militärische Führungsinfor-mationssysteme, Gefechtsstand- und Lagedarstellungstechnik, FüWES VWW416 Personalführungs- und Personalinformationssystem"@de,
+        "see:BWL516 Personnel management and personnel information systems in industry MIT334 Military command and control information systems, command post and situation display technology, FüWES VWW416 Personnel management and personnel information system"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA230" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Personalauswahl, Personalbeurteilung und Beförderung von militärischen Personal"@de,
+        "Deals with the selection, appraisal and promotion of military personnel"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Allgemeine Themen der Personalführung",
+        "Personalbearbeitung in den Streitkäften" ;
+    skos:notation "MIA230" ;
+    skos:prefLabel "Personalauswahl"@de,
+        "Selection of personnel"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA240" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Versetzung und Kommandierung von militärischen Personal"@de,
+        "Deals with the transfer and command of military personnel"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Allgemeine Themen der Personalführung",
+        "Personalbearbeitung in den Streitkäften" ;
+    skos:notation "MIA240" ;
+    skos:prefLabel "Versetzung, Kommandierung"@de,
+        "Transfer, command"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA250" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Beendigung des Dienstverhältnisses und der Soldatenversorgung von militärischen Personal"@de,
+        "Deals with the termination of service and military pensions for military personnel"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Allgemeine Themen der Personalführung",
+        "Personalbearbeitung in den Streitkäften" ;
+    skos:notation "MIA250" ;
+    skos:prefLabel "Beendigung des Dientsverhältnisses, Soldatenversorgung"@de,
+        "Termination of employment, soldier's pension"@en ;
+    skos:scopeNote "ausg:MIA330 Recht der Fürsorge für Soldaten, militärisches Besoldungs- und Versorgungsrecht, Urlaubsrecht"@de,
+        "exg:MIA330 Law on the welfare of soldiers, military pay and pension law, leave law"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA260" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Personalführung von Mannschaften"@de,
+        "Deals with the personnel management of teams"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Allgemeine Themen der Personalführung",
+        "Personalbearbeitung in den Streitkäften" ;
+    skos:notation "MIA260" ;
+    skos:prefLabel "Personalführung der Mannschaften"@de,
+        " Personnel management of crews"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA270" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Personalführung von Unteroffizieren"@de,
+        "Deals with the personnel management of non-commissioned officers"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Allgemeine Themen der Personalführung",
+        "Personalbearbeitung in den Streitkäften" ;
+    skos:notation "MIA270" ;
+    skos:prefLabel "Personalführung der Unteroffiziere"@de,
+        "Personnel management of non-commissioned officers"@en ;
+    skos:scopeNote "Hinw:einschließlich Fähnriche (Feldwebelleutnante) als Dienstgradgruppe"@de,
+        "Note:including ensigns (sergeants) as a rank group"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA280" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Personalführung von Offizieren"@de,
+        "Deals with the personnel management of officers"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
+        "General personnel management, personnel processing in the armed forces"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Allgemeine Themen der Personalführung",
+        "Personalbearbeitung in den Streitkäften" ;
+    skos:notation "MIA280" ;
+    skos:prefLabel "Personalführung der Offiziere"@de,
+        "Personnel management of Officers"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA281" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Personalführung von Leutnanten und Hauptmännern"@de,
+        "Deals with the personnel management of lieutenants and captains"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Personalführung der Offiziere"@de,
+        "Personnel management of officers"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalführung der Offiziere" ;
+    skos:notation "MIA281" ;
+    skos:prefLabel "Personalführung der Leutnante und Hauptleute"@de,
+        "Personnel management of lieutenants and captains"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA282" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Personalführung von Stabsoffizieren"@de,
+        "Deals with the personnel management of staff officers"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Personalführung der Offiziere"@de,
+        "Personnel management of officers"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalführung der Offiziere" ;
+    skos:notation "MIA282" ;
+    skos:prefLabel "Personalführung der Stabsoffiziere"@de,
+        "Personnel management of staff officers"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
+
+"MIA283" a skos:Concept ;
+    dct:audience "Angehörige der Bundeswehr",
+        "Members of the Bundeswehr" ;
+    dct:description "Beschäftigt sich mit der Personalführung von Generalen und Admiralen"@de,
+        "Deals with the personnel management of generals and admirals"@en ;
+    dct:language "de"@de,
+        "de"@en ;
+    dct:title "Personalführung der Offiziere"@de,
+        "Personnel management of officers"@en ;
+    skos:hasTopConcept "Militärwesen" ;
+    skos:inScheme "Klassifikation FachInfoUstgBw, 3. Auflage 2020" ;
+    skos:narrower "Personalführung der Offiziere" ;
+    skos:notation "MIA283" ;
+    skos:prefLabel "Personalführung der Generale und Admirale"@de,
+        "Personnel management of generals and admirals"@en ;
+    skos:topConceptOf "Personalwesen in den Streitkräften allgemein" .
