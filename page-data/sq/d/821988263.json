@@ -1,1 +1,1 @@
-{"data":{"allConceptScheme":{"edges":[{"node":{"id":"https://example.org/MIA#","fields":{"languages":["de","@none","en"]}}}]}}}
+{"data":{"allConceptScheme":{"edges":[{"node":{"id":"https://example.org/MIA#","fields":{"languages":["de","en","@none"]}}}]}}}
