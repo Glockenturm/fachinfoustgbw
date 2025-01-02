@@ -1,4 +1,3 @@
-@base: <https://w3id.org/fachinfo-bw/MIA#w> .
 @prefix MIA: <https://w3id.org/fachinfo-bw/MIA#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
