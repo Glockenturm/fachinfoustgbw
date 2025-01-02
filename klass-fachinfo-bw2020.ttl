@@ -1,4 +1,4 @@
-@prefix MIA: <https://w3id.org/fachinfo-bw/MIA#> .
+@prefix MIA: <https://w3id.org/fachinfo-bw/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vann/> .
@@ -9,7 +9,7 @@ MIA: a skos:ConceptScheme ;
     dct:description "Diese Klassifikation basiert auf der Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw)."@de, "This classification is based on the specialized information support of the German Armed Forces (Klassifikation FachInfoUstgBw)."@en ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     skos:hasTopConcept MIA:MIA, MIA:MIA000, MIA:MIA100, MIA:MIA200 ;
-    vann:preferredNamespaceUri "https://w3id.org/fachinfo-bw/MIA#" .
+    vann:preferredNamespaceUri "https://w3id.org/fachinfo-bw/" .
 
 MIA:MIA a skos:Concept ;
     skos:prefLabel "Militärwesen allgemein"@de, "Military Affairs in General"@en ;
