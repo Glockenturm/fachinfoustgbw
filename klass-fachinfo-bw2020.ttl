@@ -1,4 +1,5 @@
-@prefix MIA: <https://example.org/MIA#> .
+@base: <https://w3id.org/fachinfo-bw> .
+@prefix MIA: <https://w3id.org/fachinfo-bw/MIA#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vann/> .
@@ -189,7 +190,7 @@ MIA:MIA212 a skos:Concept ;
     skos:prefLabel "Nachwuchswerbung und Nachwuchsgewinnung"@de, "Recruitment and acquisition of young talent"@en ;
     skos:broader MIA:MIA210 ;
     skos:notation "MIA212" ;
-    skos:scopeNote "siehe:MIS461 Öffentlichkeitsarbeit der Streitkräfte, Partnerschaftspflege zu Truppenteilen verbündeter Streitkräfte; PSY250 Wirtschafts- und Werbepsychologie; BWL511 Personalbeschaffung, Personalbeurteilung"@de, "see: MIS461 Public relations of the armed forces, maintaining partnerships with units of allied armed forces; PSY250 Business and advertising psychology; BWL511 Personnel recruitment, personnel assessment"@en ;
+    skos:scopeNote "siehe: MIS461 Öffentlichkeitsarbeit der Streitkräfte, Partnerschaftspflege zu Truppenteilen verbündeter Streitkräfte; PSY250 Wirtschafts- und Werbepsychologie; BWL511 Personalbeschaffung, Personalbeurteilung"@de, "see: MIS461 Public relations of the armed forces, maintaining partnerships with units of allied armed forces; PSY250 Business and advertising psychology; BWL511 Personnel recruitment, personnel assessment"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA213 a skos:Concept ;
@@ -208,59 +209,48 @@ MIA:MIA218 a skos:Concept ;
     skos:broader MIA:MIA210 ;
     skos:notation "MIA218" ;
     skos:prefLabel "Zivilpersonal im Militärwesen"@de, "Civilian personnel in the military"@en ;
-    skos:scopeNote "siehe:VWW410 Personalführung in der öffentlichen Verwaltung"@de, "see: VWW410 Personnel management in public administration"@en ;
+    skos:scopeNote "siehe: VWW410 Personalführung in der öffentlichen Verwaltung"@de, "see: VWW410 Personnel management in public administration"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA220 a skos:Concept ;
     skos:narrower MIA:MIA221 ;
     skos:broader MIA:MIA200 ;
     skos:notation "MIA220" ;
-    skos:prefLabel "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de,
-        "General personnel management, personnel processing in the armed forces"@en ;
-    skos:scopeNote "siehe:MIA441 Administrative und organisatorische Aufgaben auf dem Personalsektor MIP611 Betriebskosten"@de,
-        "see:MIA441 Administrative and organizational tasks in the personnel sector MIP611 Operating costs"@en ;
+    skos:prefLabel "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de, "General personnel management, personnel processing in the armed forces"@en ;
+    skos:scopeNote "siehe: MIA441 Administrative und organisatorische Aufgaben auf dem Personalsektor MIP611 Betriebskosten"@de, "see: MIA441 Administrative and organizational tasks in the personnel sector MIP611 Operating costs"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA221 a skos:Concept ;
     skos:broader MIA:MIA220 ;
     skos:notation "MIA221" ;
-    skos:prefLabel "Militärische Personalführungssysteme und Personalinformationssysteme"@de,
-        "Military personnel management systems and personnel information systems"@en ;
-    skos:scopeNote "siehe:BWL516 Personalführungs- und Personalinformationssysteme in der gewerblichen Wirtschaft MIT334 Militärische Führungsinformationssysteme, Gefechtsstand- und Lagedarstellungstechnik, FüWES VWW410"@de,
-        "see:BWL516 Personnel management and personnel information systems in industry MIT334 Military command and control information systems, command post and situation display technology, FüWES VWW410"@en ;
+    skos:prefLabel "Militärische Personalführungssysteme und Personalinformationssysteme"@de, "Military personnel management systems and personnel information systems"@en ;
+    skos:scopeNote "siehe: BWL516 Personalführungs- und Personalinformationssysteme in der gewerblichen Wirtschaft MIT334 Militärische Führungsinformationssysteme, Gefechtsstand- und Lagedarstellungstechnik, FüWES VWW410"@de, "see: BWL516 Personnel management and personnel information systems in industry MIT334 Military command and control information systems, command post and situation display technology, FüWES VWW410"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA230 a skos:Concept ;
     skos:notation "MIA230" ;
     skos:broader MIA:MIA200 ;
-    skos:prefLabel "Personalauswahl"@de,
-        "Selection of personnel"@en ;
+    skos:prefLabel "Personalauswahl"@de, "Selection of personnel"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA240 a skos:Concept ;
     skos:notation "MIA240" ;
     skos:broader MIA:MIA200 ;
-    skos:prefLabel "Versetzung, Kommandierung"@de,
-        "Transfer, command"@en ;
+    skos:prefLabel "Versetzung, Kommandierung"@de, "Transfer, command"@en ;
     skos:inScheme MIA: .
-    
-
-
 
 MIA:MIA250 a skos:Concept ;
     skos:notation "MIA250" ;
     skos:broader MIA:MIA200 ;
     skos:prefLabel "Beendigung des Dienstverhältnisses, Soldatenversorgung"@de,
         "Termination of employment, soldier's pension"@en ;
-    skos:scopeNote "ausg:MIA330 Recht der Fürsorge für Soldaten, militärisches Besoldungs- und Versorgungsrecht, Urlaubsrecht"@de,
-        "exg:MIA330 Law on the welfare of soldiers, military pay and pension law, leave law"@en ;
+    skos:scopeNote "ausg: MIA330 Recht der Fürsorge für Soldaten, militärisches Besoldungs- und Versorgungsrecht, Urlaubsrecht"@de, "exg: MIA330 Law on the welfare of soldiers, military pay and pension law, leave law"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA260 a skos:Concept ;
     skos:notation "MIA260" ;
     skos:broader MIA:MIA200 ;
-    skos:prefLabel "Personalführung der Mannschaften"@de,
-        "Personnel management of crews"@en ;
+    skos:prefLabel "Personalführung der Mannschaften"@de, "Personnel management of crews"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA270 a skos:Concept ;
@@ -268,36 +258,31 @@ MIA:MIA270 a skos:Concept ;
     skos:broader MIA:MIA200 ;
     skos:prefLabel "Personalführung der Unteroffiziere"@de,
         "Personnel management of non-commissioned officers"@en ;
-    skos:scopeNote "Hinw:einschließlich Fähnriche (Feldwebelleutnante) als Dienstgradgruppe"@de,
-        "Note: including ensigns (sergeants) as a rank group"@en ;
+    skos:scopeNote "Hinw: einschließlich Fähnriche (Feldwebelleutnante) als Dienstgradgruppe"@de, "Note: including ensigns (sergeants) as a rank group"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA280 a skos:Concept ;
     skos:narrower MIA:MIA281, MIA:MIA282, MIA:MIA283 ;
     skos:broader MIA:MIA200 ;
     skos:notation "MIA280" ;
-    skos:prefLabel "Personalführung der Offiziere"@de,
-        "Personnel management of officers"@en ;
+    skos:prefLabel "Personalführung der Offiziere"@de, "Personnel management of officers"@en ;
     skos:inScheme MIA: .
 
 MIA:MIA281 a skos:Concept ;
     skos:notation "MIA281" ;
-    skos:prefLabel "Personalführung der Leutnante und Hauptleute"@de,
-        "Personnel management of lieutenants and captains"@en ;
+    skos:prefLabel "Personalführung der Leutnante und Hauptleute"@de, "Personnel management of lieutenants and captains"@en ;
     skos:broader MIA:MIA280 ;
     skos:inScheme MIA: .
 
 MIA:MIA282 a skos:Concept ;
     skos:notation "MIA282" ;
-    skos:prefLabel "Personalführung der Stabsoffiziere"@de,
-        "Personnel management of staff officers"@en ;
+    skos:prefLabel "Personalführung der Stabsoffiziere"@de, "Personnel management of staff officers"@en ;
     skos:broader MIA:MIA280 ;
     skos:inScheme MIA: .
 
 MIA:MIA283 a skos:Concept ;
     skos:notation "MIA283" ;
-    skos:prefLabel "Personalführung der Generale und Admirale"@de,
-        "Personnel management of generals and admirals"@en ;
+    skos:prefLabel "Personalführung der Generale und Admirale"@de, "Personnel management of generals and admirals"@en ;
     skos:broader MIA:MIA280 ;
     skos:inScheme MIA: .
 
