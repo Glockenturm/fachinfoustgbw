@@ -1,5 +1,10 @@
-# Klassifikation für die Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw) 
+# Klassifikation für die Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw) in der 3. Auflage April 2020
 ## Beschreibung des gewählten Vokabulars (Anzahl der Deskriptoren, benutzten Sprachen etc.) seines Anwendungsbereichs und Begründung der Auswahl gerade dieses Vokabulars
+Die gwähkt Klassifikation wird zur Erschliessung des Bestandes der Fachinformationsstellen der Bundeswehr genutzt. Sie wird laufend aktualisiert
+Die Klassifikation wurde als XML Datei zur Verfügung gestellt. Stand der Klassifikation ist der 07.11.2024. Die Klassifiaktion ist wie die meisten Klassifiaktionen monohierarchisch aufgebaut, das heißt eine Klasse kann maximal eine Oberklasse besitzen. Zur Definition der Klassen werden Kommentare und und Verweisungen zwichen den Klassen benutzt. Zusätzlich gibt es noch Hilfskalssen welche in jeder Hauptklasse hinzugefügt werden können.
+Die KLassifikation besteht aus 54 Hauptklassen. Diese enthalten 331 Hundertklassen
+Es wurde ein Sektor aus der Klassifikation ausgewählt, welcher Exemplarisch für die Klassifikation ist. Das Hauptgewicht der Klassifikation liegt auf dem Sektor Militärwesen. Aus diesem Grund wurde der *Sektor MIA (Militärwesen) mit den Unterklassen MIA00, MIA100 und MIA200 ausgewählt.* 
+Als zweite Sprache wurde Englisch hinzugefügt. Englisch aus dem Grunde weil es die Sprache der Bundeswehr und seiner Verbündeten ist. Die Übersetzung wurde von den Durchführenden hinzugefügt.
 Diese Klassifikation basiert auf der Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw). Er stellt ein freiwilliges Regelwerk zur Harmonisierung und Standardisierung der Forschungsberichterstattung an Forschungseinrichtungen dar. In diesem Repositorium ist die Klassifikation für die Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw) in SKOS (Turtle Syntax) kodiert. Aus dieser Datei wird eine navigierbare und durchsuchbare Ansicht der FachInfoUstgBw generiert.
 ## Zusammenarbeit mit git und auf GitHub und – falls Sie das nutzen – unter Pflege eines gemeinsamen Kanban Boards. Wie hat es funktioniert? Was wurde gelernt? Wo sind noch Probleme?
 ## Probleme beim Einrichten des Repos (Wie kann die Dokumentation verbessert werden?)
