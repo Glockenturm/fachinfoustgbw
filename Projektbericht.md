@@ -2,7 +2,7 @@
 
 ## Beschreibung des gewählten Vokabulars (Anzahl der Deskriptoren, benutzten Sprachen etc.) seines Anwendungsbereichs und Begründung der Auswahl gerade dieses Vokabulars
 
-Die **gewählte** Klassifikation wird zur **Erschließung** des Bestandes der Fachinformationsstellen der Bundeswehr genutzt. Die Klassifikation wird laufend aktualisiert. Die Klassifikation wurde als XML-Datei zur Verfügung gestellt. Stand der Klassifikation ist der 07.11.2024. Die Klassifikation ist, wie die meisten Klassifikationen, monohierarchisch aufgebaut, das heißt, eine Klasse kann maximal eine Oberklasse besitzen. Zur Definition der Klassen werden Kommentare und Verweisungen zwischen den Klassen benutzt. Zusätzlich gibt es noch Hilfsklassen, welche in jeder Hauptklasse hinzugefügt werden können.
+Die gewählte Klassifikation wird zur Erschließung des Bestandes der 59 Fachinformationsstellen der Bundeswehr genutzt. Die Klassifikation wird laufend aktualisiert. Die Klassifikation wurde als XML-Datei zur Verfügung gestellt. Stand der Klassifikation ist der 07.11.2024. Die Klassifikation ist, wie die meisten Klassifikationen, monohierarchisch aufgebaut, das heißt, eine Klasse kann maximal eine Oberklasse besitzen. Zur Definition der Klassen werden Kommentare und Verweisungen zwischen den Klassen benutzt. Zusätzlich gibt es noch Hilfsklassen, welche in jeder Hauptklasse hinzugefügt werden können.
 
 Die Klassifikation besteht aus 54 Hauptklassen. Diese enthalten 331 Hundertklassen, 1140 Zehnerklassen und 2102 Einerklassen, insgesamt 3573 zur Klassierung zugelassene Klassen. Die Klassen verteilen sich auf die folgenden Sektoren:
 
@@ -13,9 +13,9 @@ Die Klassifikation besteht aus 54 Hauptklassen. Diese enthalten 331 Hundertklass
 - **Naturwissenschaften**: 624 Klassen
 - **Technik**: 679 Klassen
 
-Es wurde ein Sektor aus der Klassifikation ausgewählt, welcher exemplarisch für die Klassifikation ist. Das Hauptgewicht der Klassifikation liegt auf dem Sektor Militärwesen. Aus diesem Grund wurde der *Sektor MIA (Militärwesen) mit den Unterklassen MIA00, MIA100 und MIA200 ausgewählt.* Insgesamt besteht dieser Ausschnitt aus 40 Klassen und Unterklassen, die in Deutsch und Englisch vorliegen und mit Hinweisen (Scope Note) versehen sind. Die Klassen sind alle hierarchisch miteinander verbunden, sind mittels *broader* als Teil einer Klasse bzw. *narrower* als übergeordneter Teil einer Klasse definiert. Mit *prefLabel* werden die Klassen definiert.
+Es wurde ein Sektor aus der Klassifikation ausgewählt, welcher exemplarisch für die Klassifikation ist. Der Schwerpunkt der Klassifikation liegt auf dem Sektor **Militärwesen**. Aus diesem Grund wurde der Sektor **MIA (Militärwesen)** mit den Unterklassen **MIA00, MIA100** und **MIA200** ausgewählt. Insgesamt besteht dieser Ausschnitt aus 40 Klassen und Unterklassen, die in Deutsch und Englisch vorliegen und mit Hinweisen (Scope Note) versehen sind. Die Klassen sind alle hierarchisch miteinander verbunden, sind mittels *broader* als Teil einer Klasse bzw. *narrower* als übergeordneter Teil einer Klasse definiert. Mit *prefLabel* werden die Klassen definiert.
 
-Als zweite Sprache wurde Englisch hinzugefügt, weil es die Sprache der Bundeswehr und ihrer Verbündeten ist. Die Übersetzung wurde von den Durchführenden durchgeführt. Insgesamt besteht dieser Ausschnitt aus 40 Unterklassen, die in Deutsch und Englisch vorliegen.
+Als zweite Sprache wurde Englisch hinzugefügt, weil es die Sprache der Bundeswehr und ihrer Verbündeten ist. Die Übersetzung wurde von den Durchführenden durchgeführt. Insgesamt besteht dieser Ausschnitt aus 40 Unterklassen, die abschliessend in Deutsch und Englisch vorliegen.
 
 Die Werte der Klassifikation wurden in einer Excel-Datei definiert und anschließend mittels eines Python-Skripts in ein .ttl (Turtle) Format importiert. Turtle ist ein Format zur Darstellung von RDF-Daten (Resource Description Framework). Es wird verwendet, um Begriffe und ihre Beziehungen maschinenlesbar zu beschreiben. SKOS baut auf RDF auf. 
 
@@ -23,11 +23,11 @@ Eine manuelle Konvertierung ist zu aufwendig, deswegen wurde Python verwendet (S
 
 ## Zusammenarbeit mit Git und auf GitHub und – falls Sie das nutzen – unter Pflege eines gemeinsamen Kanban Boards. Wie hat es funktioniert? Was wurde gelernt? Wo sind noch Probleme?
 
-Git und GitHub bieten sich sehr gut für das kollaborative Arbeiten mittels des Codes an. Jede Änderung ist nachvollziehbar. Für die bessere und schnellere Zusammenarbeit haben beide Projektteilnehmenden in einem Repositorium gearbeitet.
+Git und GitHub bieten sich sehr gut für das kollaborative Arbeiten an. Jede Änderung ist nachvollziehbar. Für die bessere und schnellere Zusammenarbeit haben beide Projektteilnehmenden in einem Repositorium gearbeitet.
 
 ## Probleme beim Einrichten des Repos (Wie kann die Dokumentation verbessert werden?)
 
-Es gab keine Probleme.
+Es gab keine Probleme. Die Dokumentation ist in sich schlüssig. 
 
 ## Verständnis von RDF und SKOS vor und nach Bearbeitung der Aufgabe.
 
