@@ -17,7 +17,13 @@ Die Klassifikation besteht aus 54 Hauptklassen. Diese enthalten 331 Hundertklass
 | Technik               | 679               | 
 
 
-Es wurde ein Sektor aus der Klassifikation ausgewählt, welcher exemplarisch für die Klassifikation ist. Der Schwerpunkt der Klassifikation liegt auf dem Sektor **Militärwesen**. Aus diesem Grund wurde der Sektor **MIA (Militärwesen)** mit den Unterklassen **MIA00, MIA100** und **MIA200** ausgewählt. Insgesamt besteht dieser Ausschnitt aus 40 Klassen und Unterklassen, die in Deutsch und Englisch vorliegen und mit Hinweisen (Scope Note) versehen sind. Die Klassen sind alle hierarchisch miteinander verbunden, sind mittels *broader* als Teil einer Klasse bzw. *narrower* als übergeordneter Teil einer Klasse definiert. Mit *prefLabel* werden die Klassen definiert.
+### Fokus: Militärwesen  
+Es wurde ein Sektor aus der Klassifikation ausgewählt, welcher exemplarisch für die Klassifikation ist. Der Schwerpunkt der Klassifikation liegt auf dem Sektor **Militärwesen**. Aus diesem Grund wurde der Sektor **MIA (Militärwesen)** mit den Unterklassen **MIA00, MIA100** und **MIA200** ausgewählt. Insgesamt besteht dieser Ausschnitt aus 40 Klassen und Unterklassen, die in Deutsch und Englisch vorliegen und mit Hinweisen (Scope Note) versehen sind. 
+ Die Klassen sind hierarchisch durch folgende SKOS-Properties definiert:  
+
+- `skos:broader`: Übergeordnete Klasse.  
+- `skos:narrower`: Untergeordnete Klasse.  
+- `skos:prefLabel`: Bevorzugter Begriff. 
 
 Als zweite Sprache wurde Englisch hinzugefügt, weil es die Sprache der Bundeswehr und ihrer Verbündeten ist. Die Übersetzung ist nicht offiziell und wurde zwecks der Aufgabe durch die Studierednen nach ihren Vorstellungen übersetzt. Insgesamt besteht dieser Ausschnitt aus 40 Unterklassen, die abschliessend in Deutsch und Englisch vorliegen.
 
@@ -25,6 +31,17 @@ Die Werte der Klassifikation wurden in einer Excel-Datei definiert. Folgende Tes
 Anschließend mittels eines Python-Skripts die Excel-Tabelle in ein .ttl (Turtle) Format importiert. Turtle ist ein Format zur Darstellung von RDF-Daten (Resource Description Framework). Es wird verwendet, um Begriffe und ihre Beziehungen maschinenlesbar zu beschreiben. SKOS baut auf RDF auf. 
 
 Eine manuelle Konvertierung ist zu aufwendig, deswegen wurde Python verwendet (Schritt 1: Mit Python und der Bibliothek Pandas wurden die Excel-Daten importiert. Schritt 2: Mit der Bibliothek rdflib wurden die RDF-Daten im Turtle-Format generiert). Die so entstandene Turtle-Datei wurde anschließend auf der vorher geforkten Seite des Repositoriums hochgeladen und in mehreren Schritten angepasst, bis das Ergebnis vorliegt.
+
+#### Beispiel einer Klasse:  
+
+```turtle
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<MIA100> a skos:Concept ;
+    skos:prefLabel "Militärgeschichte"@de ;
+    skos:altLabel "History of Military"@en ;
+    skos:broader <MIA> ;
+    skos:scopeNote "Beschreibt die historische Entwicklung militärischer Konflikte und Organisationen."@de .
 
 ## Zusammenarbeit mit Git und auf GitHub und – falls Sie das nutzen – unter Pflege eines gemeinsamen Kanban Boards. Wie hat es funktioniert? Was wurde gelernt? Wo sind noch Probleme?
 
