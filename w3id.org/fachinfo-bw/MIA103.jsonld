@@ -25,7 +25,7 @@
   },
   "inScheme": [
     {
-      "id": "https://w3id.org/fachinfo-bw/",
+      "id": "https://w3id.org/fachinfo-bw/scheme",
       "title": {
         "de": "Klassifikation FachInfoUstgBw, 3. Auflage 2020"
       }
@@ -33,7 +33,7 @@
   ],
   "inSchemeAll": [
     {
-      "id": "https://w3id.org/fachinfo-bw/"
+      "id": "https://w3id.org/fachinfo-bw/scheme"
     }
   ],
   "@context": {
