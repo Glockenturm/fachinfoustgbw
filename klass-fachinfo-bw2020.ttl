@@ -1,291 +1,291 @@
-@prefix MIA: <https://w3id.org/fachinfo-bw/> .
+@base <https://w3id.org/fachinfo-bw/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
 @prefix vann: <http://purl.org/vann/> .
 
-MIA: a skos:ConceptScheme ;
+<scheme> a skos:ConceptScheme ;
     dct:title "Klassifikation FachInfoUstgBw, 3. Auflage 2020"@de ;
     dct:audience "Angehörige der Bundeswehr"@de, "Members of the Bundeswehr"@en ;
     dct:description "Diese Klassifikation basiert auf der Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw)."@de, "This classification is based on the specialized information support of the German Armed Forces (Klassifikation FachInfoUstgBw)."@en ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept MIA:MIA, MIA:MIA000, MIA:MIA100, MIA:MIA200 ;
-    vann:preferredNamespaceUri "https://w3id.org/fachinfo-bw/" .
+    vann:preferredNamespaceUri "https://w3id.org/fachinfo-bw/" ;
+    skos:hasTopConcept <MIA>, <MIA000>, <MIA100>, <MIA200> .
 
-MIA:MIA a skos:Concept ;
+<MIA> a skos:Concept ;
     skos:prefLabel "Militärwesen allgemein"@de, "Military Affairs in General"@en ;
     skos:notation "MIA" ;
-    skos:topConceptOf MIA: .
+    skos:topConceptOf <scheme> .
 
-MIA:MIA000 a skos:Concept ;
+<MIA000> a skos:Concept ;
     skos:prefLabel "Militärwesen"@de, "Military Affairs"@en ;
-    skos:narrower MIA:MIA001, MIA:MIA002, MIA:MIA008 ;
+    skos:narrower <MIA001>, <MIA002>, <MIA008> ;
     skos:notation "MIA000" ;
     skos:scopeNote "Hinw.: Allgemeines"@de, "Note: General"@en ;
-    skos:topConceptOf MIA: .
+    skos:topConceptOf <scheme> .
 
-MIA:MIA100 a skos:Concept ;
+<MIA100> a skos:Concept ;
     skos:prefLabel "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen"@de, "Defense Systems"@en ;
-    skos:narrower MIA:MIA103, MIA:MIA108 ;
+    skos:narrower <MIA103>, <MIA108> ;
     skos:notation "MIA100" ;
     skos:scopeNote "Hinw: IMMER auch eine entsprechende MIG... Notation vergeben"@de, "Note: ALWAYS assign a corresponding MIG... notation."@en ;
-    skos:topConceptOf MIA: .
+    skos:topConceptOf <scheme> .
 
-MIA:MIA001 a skos:Concept ;
+<MIA001> a skos:Concept ;
     skos:prefLabel "Allgemeine militärische Fachenzyklopädien, Lexika und Fachwörterbücher"@de, "General Military Encyclopedias, Lexicons, and Specialized Dictionaries"@en ;
-    skos:broader MIA:MIA000 ;
+    skos:broader <MIA000> ;
     skos:notation "MIA001" ;
     skos:scopeNote "ausg: MIH001 Fachenzyklopädien, Lexika und Fachwörterbücher der Landstreitkräfte und Landkriegführung; MIL001 Fachenzyklopädien, Lexika und Fachwörterbücher der Luftstreitkräfte und Luftkriegführung; MIM001 Fachenzyklopädien, Lexika und Fachwörterbücher der Marine und Seekriegführung."@de, "Ex: MIH001 Encyclopedias, Lexicons, and Specialized Dictionaries of Land Forces and Land Warfare; MIL001 Encyclopedias, Lexicons, and Specialized Dictionaries of Air Forces and Air Warfare; MIM001 Encyclopedias, Lexicons, and Specialized Dictionaries of Naval Forces and Naval Warfare."@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA002 a skos:Concept ;
+<MIA002> a skos:Concept ;
     skos:prefLabel "Allgemeine militärische Fachbibliographien"@de, "General Military Bibliographies"@en ;
-    skos:broader MIA:MIA000 ;
+    skos:broader <MIA000> ;
     skos:notation "MIA002" ;
     skos:scopeNote "ausg: MIH002 Fachbibliographien der Landstreitkräfte und Landkriegführung; MIL002 Fachbibliographien der Luftstreitkräfte und Luftkriegführung; MIM002 Fachbibliographien der Marine und Seekriegführung."@de, "Ex: MIH002 Specialized Bibliographies of Land Forces and Land Warfare; MIL002 Specialized Bibliographies of Air Forces and Air Warfare; MIM002 Specialized Bibliographies of Naval Forces and Naval Warfare."@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA008 a skos:Concept ;
+<MIA008> a skos:Concept ;
     skos:prefLabel "Persönlichkeiten der Streitkräfte"@de, "Personalities of the Armed Forces"@en ;
-    skos:broader MIA:MIA000 ;
+    skos:broader <MIA000> ;
     skos:notation "MIA008" ;
     skos:scopeNote "Hinw.: Biographien; ausg: MIH008 Persönlichkeiten der Landstreitkräfte; MIL008 Persönlichkeiten der Luftstreitkräfte; MIM008 Persönlichkeiten der Seestreitkräfte"@de, "Note: Biographies; Ex: MIH008 Personalities of Land Forces; MIL008 Personalities of Air Forces; MIM008 Personalities of Naval Forces."@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA103 a skos:Concept ;
+<MIA103> a skos:Concept ;
     skos:prefLabel "Geschichte der Wehrsysteme, Gesamtstreitkräfte, strategischen Truppengliederungen und paramilitärischen Organisationen"@de, "History of military systems, overall armed forces, strategic troop structures and paramilitary organizations"@en ;
-    skos:broader MIA:MIA100 ;
+    skos:broader <MIA100> ;
     skos:notation "MIA103" ;
     skos:scopeNote "Hinw: IMMER auch eine entsprechende MIG... Notation vergeben"@de, "Note: ALWAYS assign a corresponding MIG... notation."@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA108 a skos:Concept ;
+<MIA108> a skos:Concept ;
     skos:prefLabel "Personen paramilitärischer und vormilitärischer Organisationen"@de, "Individuals in paramilitary and pre-military organizations"@en ;
-    skos:broader MIA:MIA100 ;
+    skos:broader <MIA100> ;
     skos:notation "MIA108" ;
     skos:scopeNote "Hinw: Auch Personen von SA und SS (Biographien)"@de, "Note: Also includes individuals from SA and SS (Biographies)."@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA110 a skos:Concept ;
+<MIA110> a skos:Concept ;
     skos:prefLabel "Wehrsysteme"@de, "Military systems"@en ;
-    skos:broader MIA:MIA100 ;
+    skos:broader <MIA100> ;
     skos:notation "MIA110" ;
     skos:scopeNote "Hinw: zB Wehrpflichtarmee, Berufsarmee, Milizsystem"@de, "Note: Examples include conscription armies, professional armies, and militia systems."@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA120 a skos:Concept ;
+<MIA120> a skos:Concept ;
     skos:prefLabel "Gesamtstreitkräfte"@de, "Overall armed forces"@en ;
-    skos:broader MIA:MIA100 ;
+    skos:broader <MIA100> ;
     skos:notation "MIA120" ;
     skos:scopeNote "Hinw: Gesamtdarstellungen der Streitkräfte, einschließlich ihrer Wehrstruktur, Gliederung und Organisation."@de, "Note: Comprehensive overviews of armed forces, including their defense structure, organization, and composition."@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA130 a skos:Concept ;
+<MIA130> a skos:Concept ;
     skos:prefLabel "Strategische und teilstreitkraftübergreifende operative Truppengliederungen und Kommandobereiche"@de, "Strategic and inter-branch operational troop structures and command areas"@en ;
-    skos:narrower MIA:MIA135 ;
-    skos:broader MIA:MIA100 ;
+    skos:narrower <MIA135> ;
+    skos:broader <MIA100> ;
     skos:notation "MIA130" ;
     skos:scopeNote "Hinw: Strategische und teilstreitkraftübergreifende operative Truppengliederungen und Kommandobereiche"@de, "Note: Strategic and inter-branch operational troop structures and command areas"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA135 a skos:Concept ;
+<MIA135> a skos:Concept ;
     skos:prefLabel "Teilstreitkraftübergreifende multinationale Streitkräfte"@de, "Inter-branch multinational armed forces"@en ;
-    skos:broader MIA:MIA130 ;
+    skos:broader <MIA130> ;
     skos:notation "MIA135" ;
     skos:scopeNote "ausg: MIP200 Internationale oder supranationale Friedenstruppe und Beobachter; MIH113 Nationale und multinationale Großverbände der Landstreitkräfte; MIM113 Nationale und multinationale Großverbände der Marine."@de, "Ex: MIP200 International or supranational peacekeeping forces and observers; MIH113 National and multinational large units of the Land Forces; MIM113 National and multinational large units of the Naval Forces."@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA140 a skos:Concept ;
+<MIA140> a skos:Concept ;
     skos:prefLabel "Paramilitärische Organisationen"@de, "Paramilitary organizations"@en ;
-    skos:narrower MIA:MIA141, MIA:MIA142, MIA:MIA143, MIA:MIA144, MIA:MIA145 ;
-    skos:broader MIA:MIA100 ;
+    skos:narrower <MIA141>, <MIA142>, <MIA143>, <MIA144>, <MIA145> ;
+    skos:broader <MIA100> ;
     skos:notation "MIA140" ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA141 a skos:Concept ;
+<MIA141> a skos:Concept ;
     skos:prefLabel "Grenztruppen, Grenzpolizei"@de, "Border troops, border police"@en ;
-    skos:broader MIA:MIA140 ;
+    skos:broader <MIA140> ;
     skos:notation "MIA141" ;
     skos:scopeNote "ausg: MIM170 Küstenwache in Gesamtdarstellungen, Verbände der Küstenwache; siehe: MIK540 Grenzsicherung"@de, "Ex: MIM170 Coast Guard in Comprehensive Representations, Coast Guard Units; see: MIK540 Border Security"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA142 a skos:Concept ;
+<MIA142> a skos:Concept ;
     skos:prefLabel "Innere Truppen"@de, "Internal troops"@en ;
-    skos:broader MIA:MIA140 ;
+    skos:broader <MIA140> ;
     skos:notation "MIA142" ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA143 a skos:Concept ;
+<MIA143> a skos:Concept ;
     skos:prefLabel "Guerillaorganisationen, Paramilitärische Befreiungsbewegungen"@de, "Guerrilla Organizations, Paramilitary Liberation Movements"@en ;
-    skos:broader MIA:MIA140 ;
+    skos:broader <MIA140> ;
     skos:notation "MIA143" ;
     skos:scopeNote "siehe: MIH362 Guerillakriegführung, Guerillataktik; POL551 Innere Unruhen, Aufstand, Revolution, Staatsstreich; POL632 Separatistische Bewegungen"@de, "See: MIH362 Guerrilla Warfare, Guerrilla Tactics; POL551 Internal Unrest, Uprising, Revolution, Coup d'État; POL632 Separatist Movements"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA144 a skos:Concept ;
+<MIA144> a skos:Concept ;
     skos:prefLabel "Bewaffnete Verbände nichtstaatlicher Organisationen"@de, "Armed groups of non-state organizations"@en ;
-    skos:broader MIA:MIA140 ;
+    skos:broader <MIA140> ;
     skos:notation "MIA144" ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA145 a skos:Concept ;
+<MIA145> a skos:Concept ;
     skos:prefLabel "Historische Ritterorden"@de, "Historical Knightly Orders"@en ;
-    skos:broader MIA:MIA140 ;
+    skos:broader <MIA140> ;
     skos:notation "MIA145" ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA150 a skos:Concept ;
+<MIA150> a skos:Concept ;
     skos:prefLabel "Vormilitärische Organisationen"@de, "Pre-military organizations"@en ;
-    skos:broader MIA:MIA100 ;
+    skos:broader <MIA100> ;
     skos:notation "MIA150" ;
     skos:scopeNote "Hinw: zB DOSAAF, GST, NSFK, NSKK ...; siehe: MIS620 Militärische Sportarten, Wehrsportarten, vormilitärische Ausbildung"@de, "Note: Examples include DOSAAF, GST, NSFK, NSKK...; see: MIS620 Military Sports, Defense Sports, Pre-military Training"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA200 a skos:Concept ;
+<MIA200> a skos:Concept ;
     skos:prefLabel "Personalwesen in den Streitkräften allgemein"@de, "Human resources in the armed forces in general"@en ;
     skos:notation "MIA200" ;
     skos:scopeNote "Hinw: Bei teilstreitkraftspezifischen Dokumenten klassiere zusätzlich MIH114, MIL114, MIM114. Siehe: BWL500, VWW410, MIS220"@de, "Note: For branch-specific documents, also classify MIH114, MIL114, MIM114. See: BWL500, VWW410, MIS220"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA201 a skos:Concept ;
+<MIA201> a skos:Concept ;
     skos:prefLabel "Fachenzyklopädien, Lexika und Fachwörterbücher des allgemein militärischen Personalwesens"@de, "Specialist encyclopedias, encyclopedias and specialist dictionaries for general military personnel management"@en ;
     skos:notation "MIA201" ;
-    skos:broader MIA:MIA200 ;
-    skos:inScheme MIA: .
+    skos:broader <MIA200> ;
+    skos:inScheme <scheme> .
 
-MIA:MIA202 a skos:Concept ;
+<MIA202> a skos:Concept ;
     skos:prefLabel "Fachbibliographien des allgemeinen militärischen Personalwesens"@de, "Specialist bibliographies of general military personnel management"@en ;
     skos:notation "MIA202" ;
-    skos:broader MIA:MIA200 ;
-    skos:inScheme MIA: .
+    skos:broader <MIA200> ;
+    skos:inScheme <scheme> .
 
-MIA:MIA203 a skos:Concept ;
+<MIA203> a skos:Concept ;
     skos:prefLabel "Geschichte des allgemeinen militärischen Personalwesens"@de, "History of general military personnel management"@en ;
     skos:notation "MIA203" ;
     skos:scopeNote "Hinw: immer auch eine entsprechende MIG... Notation vergeben"@de, "Note: always assign a corresponding MIG... notation"@en ;
-    skos:broader MIA:MIA200 ;
-    skos:inScheme MIA: .
+    skos:broader <MIA200> ;
+    skos:inScheme <scheme> .
 
-MIA:MIA207 a skos:Concept ;
+<MIA207> a skos:Concept ;
     skos:prefLabel "Organisation und Institutionen des allgemeinen militärischen Personalwesens"@de, "Organization and institutions of general military personnel"@en ;
     skos:notation "MIA207" ;
-    skos:broader MIA:MIA200 ;
-    skos:inScheme MIA: .
+    skos:broader <MIA200> ;
+    skos:inScheme <scheme> .
 
-MIA:MIA210 a skos:Concept ;
+<MIA210> a skos:Concept ;
     skos:prefLabel "Personalplanung, Personalbedarf, Personalstruktur der Streitkräfte"@de, "Personnel planning, personnel requirements, personnel structure of the armed forces"@en ;
-    skos:narrower MIA:MIA211, MIA:MIA212, MIA:MIA213, MIA:MIA215, MIA:MIA218 ;
-    skos:broader MIA:MIA200 ;
+    skos:narrower <MIA211>, <MIA212>, <MIA213>, <MIA215>, <MIA218> ;
+    skos:broader <MIA200> ;
     skos:notation "MIA210" ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA211 a skos:Concept ;
+<MIA211> a skos:Concept ;
     skos:prefLabel "Wehrersatzwesen"@de, "Military replacement system"@en ;
-    skos:broader MIA:MIA210 ;
+    skos:broader <MIA210> ;
     skos:notation "MIA211" ;
     skos:scopeNote "Hinw: Maßnahmen zur Umsetzung des Wehrpflichtgesetzes, insbesondere zur Deckung des personellen Bedarfs der Streitkräfte an Grundwehrdienstleistenden und Wehrübenden siehe:MIA441 Administrative und organisatorische Aufgaben auf dem Personalsektor"@de, "Note: Measures to implement the Conscription Act, in particular to cover the armed forces' personnel needs for basic military service and military training see:MIA441 Administrative and organizational tasks in the human resources sector"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA212 a skos:Concept ;
+<MIA212> a skos:Concept ;
     skos:prefLabel "Nachwuchswerbung und Nachwuchsgewinnung"@de, "Recruitment and acquisition of young talent"@en ;
-    skos:broader MIA:MIA210 ;
+    skos:broader <MIA210> ;
     skos:notation "MIA212" ;
     skos:scopeNote "siehe: MIS461 Öffentlichkeitsarbeit der Streitkräfte, Partnerschaftspflege zu Truppenteilen verbündeter Streitkräfte; PSY250 Wirtschafts- und Werbepsychologie; BWL511 Personalbeschaffung, Personalbeurteilung"@de, "see: MIS461 Public relations of the armed forces, maintaining partnerships with units of allied armed forces; PSY250 Business and advertising psychology; BWL511 Personnel recruitment, personnel assessment"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA213 a skos:Concept ;
+<MIA213> a skos:Concept ;
     skos:prefLabel "Soldatinnen"@de, "Female soldiers"@en ;
     skos:notation "MIA213" ;
-    skos:broader MIA:MIA210 ;
-    skos:inScheme MIA: .
+    skos:broader <MIA210> ;
+    skos:inScheme <scheme> .
 
-MIA:MIA215 a skos:Concept ;
+<MIA215> a skos:Concept ;
     skos:prefLabel "Reservistenarbeit"@de, "Reservist work"@en ;
-    skos:broader MIA:MIA210 ;
+    skos:broader <MIA210> ;
     skos:notation "MIA215" ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA218 a skos:Concept ;
-    skos:broader MIA:MIA210 ;
+<MIA218> a skos:Concept ;
+    skos:broader <MIA210> ;
     skos:notation "MIA218" ;
     skos:prefLabel "Zivilpersonal im Militärwesen"@de, "Civilian personnel in the military"@en ;
     skos:scopeNote "siehe: VWW410 Personalführung in der öffentlichen Verwaltung"@de, "see: VWW410 Personnel management in public administration"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA220 a skos:Concept ;
-    skos:narrower MIA:MIA221 ;
-    skos:broader MIA:MIA200 ;
+<MIA220> a skos:Concept ;
+    skos:narrower <MIA221> ;
+    skos:broader <MIA200> ;
     skos:notation "MIA220" ;
     skos:prefLabel "Allgemeine Personalführung, Personalbearbeitung in Streitkräften"@de, "General personnel management, personnel processing in the armed forces"@en ;
     skos:scopeNote "siehe: MIA441 Administrative und organisatorische Aufgaben auf dem Personalsektor MIP611 Betriebskosten"@de, "see: MIA441 Administrative and organizational tasks in the personnel sector MIP611 Operating costs"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA221 a skos:Concept ;
-    skos:broader MIA:MIA220 ;
+<MIA221> a skos:Concept ;
+    skos:broader <MIA220> ;
     skos:notation "MIA221" ;
     skos:prefLabel "Militärische Personalführungssysteme und Personalinformationssysteme"@de, "Military personnel management systems and personnel information systems"@en ;
     skos:scopeNote "siehe: BWL516 Personalführungs- und Personalinformationssysteme in der gewerblichen Wirtschaft MIT334 Militärische Führungsinformationssysteme, Gefechtsstand- und Lagedarstellungstechnik, FüWES VWW410"@de, "see: BWL516 Personnel management and personnel information systems in industry MIT334 Military command and control information systems, command post and situation display technology, FüWES VWW410"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA230 a skos:Concept ;
+<MIA230> a skos:Concept ;
     skos:notation "MIA230" ;
-    skos:broader MIA:MIA200 ;
+    skos:broader <MIA200> ;
     skos:prefLabel "Personalauswahl"@de, "Selection of personnel"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA240 a skos:Concept ;
+<MIA240> a skos:Concept ;
     skos:notation "MIA240" ;
-    skos:broader MIA:MIA200 ;
+    skos:broader <MIA200> ;
     skos:prefLabel "Versetzung, Kommandierung"@de, "Transfer, command"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA250 a skos:Concept ;
+<MIA250> a skos:Concept ;
     skos:notation "MIA250" ;
-    skos:broader MIA:MIA200 ;
+    skos:broader <MIA200> ;
     skos:prefLabel "Beendigung des Dienstverhältnisses, Soldatenversorgung"@de,
         "Termination of employment, soldier's pension"@en ;
     skos:scopeNote "ausg: MIA330 Recht der Fürsorge für Soldaten, militärisches Besoldungs- und Versorgungsrecht, Urlaubsrecht"@de, "exg: MIA330 Law on the welfare of soldiers, military pay and pension law, leave law"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA260 a skos:Concept ;
+<MIA260> a skos:Concept ;
     skos:notation "MIA260" ;
-    skos:broader MIA:MIA200 ;
+    skos:broader <MIA200> ;
     skos:prefLabel "Personalführung der Mannschaften"@de, "Personnel management of crews"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA270 a skos:Concept ;
+<MIA270> a skos:Concept ;
     skos:notation "MIA270" ;
-    skos:broader MIA:MIA200 ;
+    skos:broader <MIA200> ;
     skos:prefLabel "Personalführung der Unteroffiziere"@de,
         "Personnel management of non-commissioned officers"@en ;
     skos:scopeNote "Hinw: einschließlich Fähnriche (Feldwebelleutnante) als Dienstgradgruppe"@de, "Note: including ensigns (sergeants) as a rank group"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA280 a skos:Concept ;
-    skos:narrower MIA:MIA281, MIA:MIA282, MIA:MIA283 ;
-    skos:broader MIA:MIA200 ;
+<MIA280> a skos:Concept ;
+    skos:narrower <MIA281>, <MIA282>, <MIA283> ;
+    skos:broader <MIA200> ;
     skos:notation "MIA280" ;
     skos:prefLabel "Personalführung der Offiziere"@de, "Personnel management of officers"@en ;
-    skos:inScheme MIA: .
+    skos:inScheme <scheme> .
 
-MIA:MIA281 a skos:Concept ;
+<MIA281> a skos:Concept ;
     skos:notation "MIA281" ;
     skos:prefLabel "Personalführung der Leutnante und Hauptleute"@de, "Personnel management of lieutenants and captains"@en ;
-    skos:broader MIA:MIA280 ;
-    skos:inScheme MIA: .
+    skos:broader <MIA280> ;
+    skos:inScheme <scheme> .
 
-MIA:MIA282 a skos:Concept ;
+<MIA282> a skos:Concept ;
     skos:notation "MIA282" ;
     skos:prefLabel "Personalführung der Stabsoffiziere"@de, "Personnel management of staff officers"@en ;
-    skos:broader MIA:MIA280 ;
-    skos:inScheme MIA: .
+    skos:broader <MIA280> ;
+    skos:inScheme <scheme> .
 
-MIA:MIA283 a skos:Concept ;
+<MIA283> a skos:Concept ;
     skos:notation "MIA283" ;
     skos:prefLabel "Personalführung der Generale und Admirale"@de, "Personnel management of generals and admirals"@en ;
-    skos:broader MIA:MIA280 ;
-    skos:inScheme MIA: .
+    skos:broader <MIA280> ;
+    skos:inScheme <scheme> .
 
 
 
