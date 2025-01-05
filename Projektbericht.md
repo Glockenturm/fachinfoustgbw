@@ -42,7 +42,8 @@ Eine manuelle Konvertierung ist zu aufwendig, deswegen wurde Python verwendet (S
     skos:altLabel "History of Military"@en ;
     skos:broader <MIA> ;
     skos:scopeNote "Beschreibt die historische Entwicklung militärischer Konflikte und Organisationen."@de .
-`---`
+
+Durch die Trennung mit `---` oder einer Leerzeile wird der Codeblock abgeschlossen, und das Markdown bleibt valide.
 
 ## Zusammenarbeit mit Git und auf GitHub und – falls Sie das nutzen – unter Pflege eines gemeinsamen Kanban Boards. Wie hat es funktioniert? Was wurde gelernt? Wo sind noch Probleme?
 
