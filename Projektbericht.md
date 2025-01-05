@@ -42,7 +42,7 @@ Eine manuelle Konvertierung ist zu aufwendig, deswegen wurde Python verwendet (S
     skos:altLabel "History of Military"@en ;
     skos:broader <MIA> ;
     skos:scopeNote "Beschreibt die historische Entwicklung militärischer Konflikte und Organisationen."@de .
----
+`---`
 
 ## Zusammenarbeit mit Git und auf GitHub und – falls Sie das nutzen – unter Pflege eines gemeinsamen Kanban Boards. Wie hat es funktioniert? Was wurde gelernt? Wo sind noch Probleme?
 
