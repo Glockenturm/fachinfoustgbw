@@ -1,7 +1,5 @@
 @base <https://w3id.org/fachinfo-bw/> .
-
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix colour: <https://glockenturm.github.io/skohub-pages/myColourVocab/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
