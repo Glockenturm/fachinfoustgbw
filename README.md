@@ -5,7 +5,7 @@ Die Klassifikation wird in den Fachinformationsstellen der Bundeswehr genutzt. G
 
 In diesem Repositorium wird ein Teil der Klassifikation MIA (Militärwesen) in SKOS kodiert. 
 
-Eine genauere Erklärung ginden Sie in der Datei Projektbericht.md in diesem Repositorium.
+Eine genauere Erklärung ginden Sie in der Datei [Projektbericht.md](https://github.com/Glockenturm/fachinfoustgbw/blob/main/Projektbericht.md) in diesem Repositorium.
 
 # "Classification FachInfoUstgBw, 3rd edition 2020
 
@@ -14,4 +14,4 @@ The classification is used in the Bundeswehr's specialist information centers. T
 
 In this repository, part of the MIA classification is coded in SKOS.
 
-You can find a more detailed explanation in the file [Projektbericht.md] in this repository.
+You can find a more detailed explanation in the file [Projektbericht.md](https://github.com/Glockenturm/fachinfoustgbw/blob/main/Projektbericht.md) in this repository.
