@@ -3,7 +3,7 @@
 ========================================================================
 Die Klassifikation wird in den Fachinformationsstellen der Bundeswehr genutzt. Gepflegt und Aktualisiert wird die Klassifikation FachInfoUstgBw im Fachinformationszentrum der Bundeswehr.
 
-In diesem Repositorium wird ein Teil der Klassifikation MIA in SKOS kodiert. 
+In diesem Repositorium wird ein Teil der Klassifikation MIA (Militärwesen) in SKOS kodiert. 
 
 Eine genauere Erklärung ginden Sie in der Datei Projektbericht.md in diesem Repositorium.
 
@@ -14,4 +14,4 @@ The classification is used in the Bundeswehr's specialist information centers. T
 
 In this repository, part of the MIA classification is coded in SKOS.
 
-You can find a more detailed explanation in the file Projektbericht.md in this repository.
+You can find a more detailed explanation in the file [Projektbericht.md] in this repository.
