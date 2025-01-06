@@ -6,7 +6,7 @@
 @prefix vann: <http://purl.org/vocab/vann/>  .
 
 <scheme> a skos:ConceptScheme ;
-    dct:title "Klassifikation FachInfoUstgBw, 3. Auflage 2020"@de ;
+    dct:title "Klassifikation FachInfoUstgBw, 3. Auflage 2020"@de, "Classification FachInfoUstgBw, 3rd Edition 2020"@en ;
     dct:audience "Angehörige der Bundeswehr"@de, "Members of the Bundeswehr"@en ;
     dct:description "Diese Klassifikation basiert auf der Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw)."@de, "This classification is based on the specialized information support of the German Armed Forces (Klassifikation FachInfoUstgBw)."@en ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
