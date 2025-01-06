@@ -283,7 +283,7 @@
 
 <MIA283> a skos:Concept ;
     skos:notation "MIA283" ;
-    skos:prefLabel "Personalführung der Generale und Admirale"@de, "Personnel management of generals and admirals"@en ;
+    skos:prefLabel "Personalführung der Generale  und Admirale"@de, "Personnel management of generals and admirals"@en ;
     skos:broader <MIA280> ;
     skos:inScheme <scheme> .
 
