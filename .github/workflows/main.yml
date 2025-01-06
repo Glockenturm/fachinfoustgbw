@@ -25,7 +25,7 @@ jobs:
           [[ ${lines} -eq 4 ]] || exit 1
         done
 
-        validate-for-errors:
+  validate-for-errors:
     name: Check for Errors
     runs-on: ubuntu-latest
     steps:
