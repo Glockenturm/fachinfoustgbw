@@ -3,7 +3,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
-@prefix vann: <http://purl.org/vocab/vann/>  .
+@prefix vann: <http://purl.org/vocab/vann/> .
 
 <scheme> a skos:ConceptScheme ;
     dct:title "Klassifikation FachInfoUstgBw, 3. Auflage 2020"@de, "Classification FachInfoUstgBw, 3rd Edition 2020"@en ;
