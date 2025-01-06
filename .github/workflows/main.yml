@@ -1,135 +1,48 @@
-name: Build /public and deploy to gh-pages with docker container
+name: Validate TTL Files
 
-on:
-  push:
-  workflow_dispatch:
-    inputs:
-      logLevel:
-        description: 'Log level'
-        required: true
-        default: 'warning'
-      tags:
-        description: 'Test scenario tags'
+on: [push] 
 
 jobs:
-  all-ttl-files:
+  validate-for-warnings:
+    name: Check for Warnings
     runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.set-matrix.outputs.file-list }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Check for Warnings
+      run: |
+        curl -s https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForWarning.rq >> checkForWarning.rq
+        find . -type f -name '*.ttl' | while read file; do
+          # Adjust the file path to remove the './' part
+          adjusted_file_path=$(echo "$file" | sed 's|^./||')  
+          echo "Processing $adjusted_file_path with Docker..."
+          docker run --rm -v "$(pwd)/$adjusted_file_path:/rdf/test.ttl" skohub/jena:4.6.1 shacl validate --shapes https://raw.githubusercontent.com/skohub-io/shapes/main/skohub.shacl.ttl --data /rdf/test.ttl >> result.ttl
+          validation_result="$(docker run --rm --mount type=bind,source=./checkForWarning.rq,target=/rdf/checkForViolation.rq --mount type=bind,source=./result.ttl,target=/rdf/result.ttl skohub/jena:4.6.1 arq --data /rdf/result.ttl --query /rdf/checkForViolation.rq)"
+          echo $validation_result
+          lines=$(echo "$validation_result" | wc -l )
+          # Correct validation has 4 lines of output
+          [[ ${lines} -eq 4 ]] || exit 1
+        done
 
-      - name: Find TTL files
-        id: find-ttl
-        run: |
-          ttl_files=$(find . -name '*.ttl' -printf '"%p",' | sed 's/,$//')
-          echo "ttl_files=$ttl_files" 
-          echo "ttl_files=$ttl_files" >> "$GITHUB_ENV"
-
-      - name: Set matrix for TTL files
-        id: set-matrix
-        run: echo "file-list=[${ttl_files}]" >> $GITHUB_OUTPUT
-
-      - name: List all changed files
-        run: echo "${ttl_files}"
-
-  changedfiles:
+        validate-for-errors:
+    name: Check for Errors
     runs-on: ubuntu-latest
-    outputs:
-      ttl: ${{ steps.set-ttl-matrix.outputs.ttl }}
-      yml: ${{ steps.set-yml-matrix.outputs.yml }}
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-      - name: Get changed ttl-files
-        id: changed-ttl-files
-        uses: tj-actions/changed-files@v42
-        with:
-          files: |
-            **/*.ttl
-          json: true
-
-      - name: Get changed yml-files
-        id: changed-yml-files
-        uses: tj-actions/changed-files@v42
-        with:
-          files: |
-            **/*.yml
-            **/*.yaml
-          json: true
-
-      - name: Set turtle file matrix
-        id: set-ttl-matrix
-        run: echo "ttl=${{ steps.changed-ttl-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
-
-      - name: Set yml file matrix
-        id: set-yml-matrix
-        run: echo "yml=${{ steps.changed-yml-files.outputs.all_changed_files }}" >> $GITHUB_OUTPUT
-
-  prepare-matrix:
-    runs-on: ubuntu-latest
-    needs: [changedfiles, all-ttl-files]
-    outputs:
-      matrix: ${{ steps.set-matrix.outputs.matrix }}
-    steps:
-      - name: Determine matrix
-        id: set-matrix
-        run: |
-          changed_files_ttl=${{ toJSON(needs.changedfiles.outputs.ttl) }}
-          changed_files_yml=${{ toJSON(needs.changedfiles.outputs.yml) }}
-
-          if [ $(echo "$changed_files_ttl" | jq length) -gt 0 ]; then
-            echo "matrix=${{ toJSON(needs.changedfiles.outputs.ttl) }}" >> $GITHUB_OUTPUT
-          elif [ $(echo "$changed_files_yml" | jq length) -gt 0 ]; then
-            echo "matrix=${{ toJSON(needs.all-ttl-files.outputs.matrix) }}" >> $GITHUB_OUTPUT
-          else
-            echo "matrix=[]" >> $GITHUB_OUTPUT
-          fi
-
-  build:
-    runs-on: ubuntu-latest
-    needs: [prepare-matrix]
-    if: ${{ needs.prepare-matrix.outputs.matrix != '[]'}}
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-        with:
-          persist-credentials: false
-
-      - name: remove public and data-dir if already exists
-        run: rm -rf public data
-
-      - run: mkdir public
-
-      - run: chmod -R 777 public # user in container is node which won't have write access to public
-
-      - run: mkdir data
-
-      - run: chmod -R 777 data # user in container is node which won't have write access to public
-
-      - run: git clone https://github.com/$GITHUB_REPOSITORY.git data/ 
-
-      - name: make .env file
-        run: |
-          input=$GITHUB_REPOSITORY
-          repo=${input#*/}
-          echo "BASEURL=/$repo" > .env
-
-      - name: build public dir with docker image
-        run: >
-          docker run
-          -v $(pwd)/public:/app/public
-          -v $(pwd)/data:/app/data
-          -v $(pwd)/.env:/app/.env
-          -v $(pwd)/config.yaml:/app/config.yaml
-          -e GATSBY_RESPOSITORY_URL=https://github.com/$GITHUB_REPOSITORY
-          skohub/skohub-vocabs-docker:latest
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Check for Errors
+      run: |
+        curl -s https://raw.githubusercontent.com/skohub-io/shapes/main/scripts/checkForViolation.rq >> checkForViolation.rq
+        find . -type f -name '*.ttl' | while read file; do
+          # Adjust the file path to remove the './' part
+          adjusted_file_path=$(echo "$file" | sed 's|^./||')  
+          echo "Processing $adjusted_file_path with Docker..."
+          docker run --rm -v "$(pwd)/$adjusted_file_path:/rdf/test.ttl" skohub/jena:4.6.1 shacl validate --shapes https://raw.githubusercontent.com/skohub-io/shapes/main/skohub.shacl.ttl --data /rdf/test.ttl >> result.ttl
+          validation_result="$(docker run --rm --mount type=bind,source=./checkForViolation.rq,target=/rdf/checkForViolation.rq --mount type=bind,source=./result.ttl,target=/rdf/result.ttl skohub/jena:4.6.1 arq --data /rdf/result.ttl --query /rdf/checkForViolation.rq)"
+          echo $validation_result
+          lines=$(echo "$validation_result" | wc -l )
+          # Correct validation has 4 lines of output
+          [[ ${lines} -eq 4 ]] || exit 1
+        done
