@@ -1,4 +1,4 @@
-# "Klassifikation FachInfoUstgBw, 3. Auflage 2020
+# Klassifikation FachInfoUstgBw, 3. Auflage 2020
 
 ========================================================================
 Die Klassifikation wird in den Fachinformationsstellen der Bundeswehr genutzt. Gepflegt und Aktualisiert wird die Klassifikation FachInfoUstgBw im Fachinformationszentrum der Bundeswehr.
