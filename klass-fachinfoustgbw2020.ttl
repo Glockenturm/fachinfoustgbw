@@ -1,4 +1,4 @@
-@base <https://w3id.org/fachinfo-bw> .
+@base <https://w3id.org/fachinfo-bw/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -11,7 +11,7 @@
     dct:description "Diese Klassifikation basiert auf der Fachinformationsunterstützung der Bundeswehr (Klassifikation FachInfoUstgBw)."@de, "This classification is based on the specialized information support of the German Armed Forces (Klassifikation FachInfoUstgBw)."@en ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
     vann:preferredNamespacePrefix "hfs" ;
-    vann:preferredNamespaceUri "https://w3id.org/fachinfo-bw" ;
+    vann:preferredNamespaceUri "https://w3id.org/fachinfo-bw/" ;
     schema:isBasedOn <http://bartoc.org/node/18919> ;
     skos:hasTopConcept <MIA>, <MIA000>, <MIA100>, <MIA200> .
 
