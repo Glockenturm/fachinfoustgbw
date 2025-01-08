@@ -6,7 +6,7 @@ In diesem Repositorium wird ein Teil der Klassifikation MIA (Militärwesen) in S
 
 Eine genauere Erklärung finden Sie in der Datei [Projektbericht.md](https://github.com/Glockenturm/fachinfoustgbw/blob/main/Projektbericht.md) in diesem Repositorium.
 
-Das Repositorium ist im Rahmen des MALIS Studienganges der TH Klön Jahrgang 2024 von Karina Arena und Sebastian Stute angelegt worden.
+Das Repositorium ist im Rahmen des MALIS Studienganges der TH Köln Jahrgang 2024 von Karina Arena und Sebastian Stute angelegt worden.
 
 # Classification FachInfoUstgBw, 3rd edition 2020
 
