@@ -66,6 +66,10 @@ Grundsätzlich ist das Kanban-Board eine sehr gute Möglichkeit, um mit mehreren
 
 Nach anfänglichen Schwierigkeiten ist das Repository nun soweit fortgeschritten, dass auch der Rest des Vokabulars erstellt werden könnte. Das vorhandene Gerüst würde dafür reichen. Im nächsten Schritt kann nun ein Kanban-Board erstellt werden, in dem die jeweiligen Hauptklassen aufgelistet sind und Schritt für Schritt bearbeitet werden können.
 
+Das einrichten eines Permalinks nach der folgender Anleitung  [Publishing SKOS the easy way](https://blog.skohub.io/2024-03-21-skohub-pages/) hat nicht funktioniert. Hierbei kam immer die Fehlermeldung *NOT FOUND
+
+You just hit a route that doesn't exist... the sadness*. Erst der Austausch der custom domain in der config.yaml von [https://glockenturm.github.io/fachinfustgbw](https://glockenturm.github.io/fachinfustgbw) auf den Permalink [https://w3id.org/fachinfo-bw](https://w3id.org/fachinfo-bw) brachte die Lösung. 
+
 ## Verständnis von RDF und SKOS vor und nach Bearbeitung der Aufgabe.
 
 Vor der Bearbeitung war kein Verständnis vorhanden. 
