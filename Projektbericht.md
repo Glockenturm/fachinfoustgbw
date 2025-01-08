@@ -42,12 +42,12 @@ Die so entstandene Turtle-Datei wurde anschließend auf der vorher geforkten Sei
 ```turtle
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-MIA:MIA000 a skos:Concept ;
+<MIA000> a skos:Concept ;
     skos:prefLabel "Militärwesen"@de, "Military Affairs"@en ;
-    skos:narrower MIA:MIA001, MIA:MIA002, MIA:MIA008 ;
+    skos:narrower <MIA001>, <MIA002>, <MIA008> ;
     skos:notation "MIA000" ;
     skos:scopeNote "Hinw.: Allgemeines"@de, "Note: General"@en ;
-    skos:topConceptOf MIA: .
+    skos:topConceptOf <scheme> .
 
 ```
 
