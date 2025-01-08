@@ -16,4 +16,4 @@ In this repository, part of the MIA classification is coded in SKOS.
 
 You can find a more detailed explanation in the file [Projektbericht.md](https://github.com/Glockenturm/fachinfoustgbw/blob/main/Projektbericht.md) in this repository.
 
-The repository was created by Karina Arena and Sebastian Stute as part of the MALIS study program 2024.
+The repository was created by Karina Arena and Sebastian Stute as part of the MALIS study program TH Köln 2024.
