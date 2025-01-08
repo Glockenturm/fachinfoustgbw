@@ -4,7 +4,7 @@ Die Klassifikation wird in den Fachinformationsstellen der Bundeswehr genutzt. G
 
 In diesem Repositorium wird ein Teil der Klassifikation MIA (Militärwesen) in SKOS kodiert. 
 
-Eine genauere Erklärung ginden Sie in der Datei [Projektbericht.md](https://github.com/Glockenturm/fachinfoustgbw/blob/main/Projektbericht.md) in diesem Repositorium.
+Eine genauere Erklärung finden Sie in der Datei [Projektbericht.md](https://github.com/Glockenturm/fachinfoustgbw/blob/main/Projektbericht.md) in diesem Repositorium.
 
 Das Repositorium ist im Rahmen des MALIS Studienganges 2024 von Karina Arena und Sebastian Stute angelegt worden.
 
