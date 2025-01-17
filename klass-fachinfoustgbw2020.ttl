@@ -25,14 +25,14 @@
     skos:narrower <MIA001>, <MIA002>, <MIA008> ;
     skos:notation "MIA000" ;
     skos:scopeNote "Hinw.: Allgemeines"@de, "Note: General"@en ;
-    skos:topConceptOf <scheme> .
+    skos:broader <MIA> .
 
 <MIA100> a skos:Concept ;
     skos:prefLabel "Wehrsysteme, Gesamtstreitkräfte, strategische Truppengliederungen, paramilitärische Organisationen"@de, "Defense Systems"@en ;
     skos:narrower <MIA103>, <MIA108> ;
     skos:notation "MIA100" ;
     skos:scopeNote "Hinw: IMMER auch eine entsprechende MIG... Notation vergeben"@de, "Note: ALWAYS assign a corresponding MIG... notation."@en ;
-    skos:topConceptOf <scheme> .
+    skos:broader <MIA> .
 
 <MIA001> a skos:Concept ;
     skos:prefLabel "Allgemeine militärische Fachenzyklopädien, Lexika und Fachwörterbücher"@de, "General Military Encyclopedias, Lexicons, and Specialized Dictionaries"@en ;
@@ -148,7 +148,7 @@
     skos:prefLabel "Personalwesen in den Streitkräften allgemein"@de, "Human resources in the armed forces in general"@en ;
     skos:notation "MIA200" ;
     skos:scopeNote "Hinw: Bei teilstreitkraftspezifischen Dokumenten klassiere zusätzlich MIH114, MIL114, MIM114. Siehe: BWL500, VWW410, MIS220"@de, "Note: For branch-specific documents, also classify MIH114, MIL114, MIM114. See: BWL500, VWW410, MIS220"@en ;
-    skos:inScheme <scheme> .
+    skos:broader <MIA> .
 
 <MIA201> a skos:Concept ;
     skos:prefLabel "Fachenzyklopädien, Lexika und Fachwörterbücher des allgemein militärischen Personalwesens"@de, "Specialist encyclopedias, encyclopedias and specialist dictionaries for general military personnel management"@en ;
@@ -288,45 +288,3 @@
     skos:prefLabel "Personalführung der Generale  und Admirale"@de, "Personnel management of generals and admirals"@en ;
     skos:broader <MIA280> ;
     skos:inScheme <scheme> .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
