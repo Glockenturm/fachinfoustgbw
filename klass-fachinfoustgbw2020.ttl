@@ -143,7 +143,8 @@
     skos:prefLabel "Vormilitärische Organisationen"@de, "Pre-military organizations"@en ;
     skos:broader <MIA100> ;
     skos:notation "MIA150" ;
-    skos:scopeNote "Hinw: zB DOSAAF, GST, NSFK, NSKK ...; siehe: MIS620 Militärische Sportarten, Wehrsportarten, vormilitärische Ausbildung"@de, "Note: Examples include DOSAAF, GST, NSFK, NSKK...; see: MIS620 Military Sports, Defense Sports, Pre-military Training"@en ;
+    skos:scopeNote "siehe: MIS620 Militärische Sportarten, Wehrsportarten, vormilitärische Ausbildung"@de, "see: MIS620 Military Sports, Defense Sports, Pre-military Training"@en ;
+    skos:example "DOSAAF, GST, NSFK, NSKK"@de, "DOSAAF, GST, NSFK, NSKK"@en;
     skos:inScheme <scheme> .
 
 <MIA200> a skos:Concept ;
